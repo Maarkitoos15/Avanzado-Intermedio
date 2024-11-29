@@ -1,0 +1,184 @@
+.lista-overflow {
+    max-height: 100px;
+    overflow: scroll; 
+    border: 1px solid #000000; 
+    padding: 5px;
+    list-style: none; 
+    background-color: rgb(164, 164, 164);
+}
+.lista-overflow li {
+    margin: 5px 0; 
+}
+.container {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.caja {
+    width: 180px;
+    height: 180px;
+    background-color: #30B037;
+    color: #FFF;
+    text-align: center;
+    line-height: 180px;
+    margin: 15px;
+    font-size: 18px;
+    font-family: Arial;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.caja7 {
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: #E67E22;
+}
+.caja7:hover {
+    opacity: 0.3;
+}
+.caja8 {
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: #95A5A6;
+}
+.caja8:hover {
+    border-style: solid;
+    border-color: #000;
+}
+.caja9 {
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: #4fc973;
+}
+.caja9:hover {
+    margin: 80px;
+}
+.caja10 {
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: black;
+}
+.caja10:hover {
+    padding: 30px;
+}
+.new-tooltip-container {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+
+.new-tooltip-item {
+    width: 200px;
+    background-color: #6029b9;
+    color: #FFF;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.new-tooltip-item a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.new-tooltip-text {
+    visibility: hidden;
+    background-color: #333;
+    color: #FFF;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s, bottom 0.3s ease-in-out;
+}
+
+.new-tooltip-item:hover .new-tooltip-text {
+    visibility: visible;
+    opacity: 1; 
+    z-index: 1;
+    bottom: 0%; 
+}
+
+.new-tooltip-item:hover {
+    background-color: #34495E;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.cursor-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    background-color: #06ddcf;
+    padding: 10px;
+    margin: 10%;
+    border-radius: 5px;
+    cursor: url('https://cdn-icons-png.flaticon.com/128/3033/3033411.png'), auto; /* Cursor con icono personalizado */
+}
+
+.cursor-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    background-color: #e65dbf;
+    padding: 10px;
+    margin: 10%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cursor-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    background-color: #f4490b;
+    padding: 10px;
+    margin: 10%;
+    border-radius: 5px;
+    cursor: help; 
+}
+
+.cursor-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    background-color: #ffe604;
+    padding: 10px;
+    margin: 10%;
+    border-radius: 5px;
+    cursor: move; 
+}
